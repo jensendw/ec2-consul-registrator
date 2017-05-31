@@ -1,8 +1,7 @@
 version: '2'
 services:
   ec2-consul-registrator:
-    #image: jensendw/ec2-consul-registrator
-    image: dantest
+    image: jensendw/ec2-consul-registrator
     environment:
       - CONSUL_URL=http://localhost:5050
       - AWS_ACCESS_KEY_ID=xxxxx
