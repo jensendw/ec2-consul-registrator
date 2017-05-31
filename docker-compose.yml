@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ec2-consul-registrator:
+    #image: jensendw/ec2-consul-registrator
+    image: dantest
+    environment:
+      - CONSUL_URL=http://localhost:5050
+      - AWS_ACCESS_KEY_ID=xxxxx
+      - AWS_SECRET_ACCESS_KEY=xxxxx
+      - AWS_DEFAULT_REGION=us-west-2
