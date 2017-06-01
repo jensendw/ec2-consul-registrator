@@ -1,2 +1,3 @@
-MOOH = "mooh"
-CONSUL_URL = "https://consul.origami42.com"
+import os
+
+CONSUL_URL = os.getenv('CONSUL_URL', 'http://localhost:8080')
